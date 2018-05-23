@@ -1,0 +1,459 @@
+Microsoft Windows [Version 10.0.16299.431]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\sganugap>git --version
+git version 2.17.0.windows.1
+
+C:\Users\sganugap>git remote add origin https://github.com/gsravya/gitTutorial.git
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\sganugap>git init
+Initialized empty Git repository in C:/Users/sganugap/.git/
+
+C:\Users\sganugap>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        $$Temp$$Hive.dat.LOG1
+        $$Temp$$Hive.dat.LOG2
+        $$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+        $$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+        $$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+        .PyCharm2018.1/
+        .bash_history
+        .cisco/
+        .oracle_jre_usage/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+        NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+        Oracle/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        ntuser.pol
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sganugap>mkdir gitTutorial
+
+C:\Users\sganugap>ls -al
+total 9350
+-rw-r--r-- 1 sganugap 197121   49152 Apr  9 16:35 '$$Temp$$Hive.dat.LOG1'
+-rw-r--r-- 1 sganugap 197121       0 Apr  9 16:35 '$$Temp$$Hive.dat.LOG2'
+-rw-r--r-- 1 sganugap 197121   65536 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf'
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms'
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms'
+drwxr-xr-x 1 sganugap 197121       0 May 23 12:06  .
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:22  ..
+drwxr-xr-x 1 sganugap 197121       0 Apr 30 16:43  .PyCharm2018.1
+-rw-r--r-- 1 sganugap 197121      65 May  7 17:04  .bash_history
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:06  .cisco
+drwxr-xr-x 1 sganugap 197121       0 May 23 12:05  .git
+drwxr-xr-x 1 sganugap 197121       0 May 15 10:24  .oracle_jre_usage
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17 '3D Objects'
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:05  AppData
+lrwxrwxrwx 1 sganugap 197121      33 Apr  9 16:05 'Application Data' -> /c/Users/sganugap/AppData/Roaming
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Contacts
+lrwxrwxrwx 1 sganugap 197121      61 Apr  9 16:05  Cookies -> /c/Users/sganugap/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Desktop
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Documents
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Downloads
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Favorites
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  IntelGraphicsProfiles
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Links
+lrwxrwxrwx 1 sganugap 197121      31 Apr  9 16:05 'Local Settings' -> /c/Users/sganugap/AppData/Local
+drwxr-xr-x 1 sganugap 197121       0 Apr 10 10:32  MicrosoftEdgeBackups
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Music
+lrwxrwxrwx 1 sganugap 197121      27 Apr  9 16:05 'My Documents' -> /c/Users/sganugap/Documents
+-rw-r--r-- 1 sganugap 197121 2621440 May 22 10:17  NTUSER.DAT
+-rw-r--r-- 1 sganugap 197121   65536 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 sganugap 197121      69 Apr  9 16:05  NetHood -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+drwxr-xr-x 1 sganugap 197121       0 May  3 14:16  Oracle
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Pictures
+lrwxrwxrwx 1 sganugap 197121      69 Apr  9 16:05  PrintHood -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 sganugap 197121      58 Apr  9 16:05  Recent -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Recent
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17 'Saved Games'
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Searches
+lrwxrwxrwx 1 sganugap 197121      58 Apr  9 16:05  SendTo -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 sganugap 197121      62 Apr  9 16:05 'Start Menu' -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 sganugap 197121      61 Apr  9 16:05  Templates -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Templates
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Videos
+drwxr-xr-x 1 sganugap 197121       0 May 23 12:06  gitTutorial
+-rw-r--r-- 1 sganugap 197121  668672 Apr  9 16:05  ntuser.dat.LOG1
+-rw-r--r-- 1 sganugap 197121  794624 Apr  9 16:05  ntuser.dat.LOG2
+-rw-r--r-- 1 sganugap 197121      20 Apr  9 16:05  ntuser.ini
+-r--r--r-- 1 sganugap 197121     768 Apr  9 16:05  ntuser.pol
+
+C:\Users\sganugap>rm -rf .git
+
+C:\Users\sganugap>ls -al
+total 9346
+-rw-r--r-- 1 sganugap 197121   49152 Apr  9 16:35 '$$Temp$$Hive.dat.LOG1'
+-rw-r--r-- 1 sganugap 197121       0 Apr  9 16:35 '$$Temp$$Hive.dat.LOG2'
+-rw-r--r-- 1 sganugap 197121   65536 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf'
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms'
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:35 '$$Temp$$Hive.dat{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms'
+drwxr-xr-x 1 sganugap 197121       0 May 23 12:06  .
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:22  ..
+drwxr-xr-x 1 sganugap 197121       0 Apr 30 16:43  .PyCharm2018.1
+-rw-r--r-- 1 sganugap 197121      65 May  7 17:04  .bash_history
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:06  .cisco
+drwxr-xr-x 1 sganugap 197121       0 May 15 10:24  .oracle_jre_usage
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17 '3D Objects'
+drwxr-xr-x 1 sganugap 197121       0 Apr  9 16:05  AppData
+lrwxrwxrwx 1 sganugap 197121      33 Apr  9 16:05 'Application Data' -> /c/Users/sganugap/AppData/Roaming
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Contacts
+lrwxrwxrwx 1 sganugap 197121      61 Apr  9 16:05  Cookies -> /c/Users/sganugap/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Desktop
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Documents
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Downloads
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Favorites
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  IntelGraphicsProfiles
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Links
+lrwxrwxrwx 1 sganugap 197121      31 Apr  9 16:05 'Local Settings' -> /c/Users/sganugap/AppData/Local
+drwxr-xr-x 1 sganugap 197121       0 Apr 10 10:32  MicrosoftEdgeBackups
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Music
+lrwxrwxrwx 1 sganugap 197121      27 Apr  9 16:05 'My Documents' -> /c/Users/sganugap/Documents
+-rw-r--r-- 1 sganugap 197121 2621440 May 22 10:17  NTUSER.DAT
+-rw-r--r-- 1 sganugap 197121   65536 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TM.blf
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 sganugap 197121  524288 Apr  9 16:23  NTUSER.DAT{47a6a17a-a514-11e7-a94e-ec0d9a05c860}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 sganugap 197121      69 Apr  9 16:05  NetHood -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+drwxr-xr-x 1 sganugap 197121       0 May  3 14:16  Oracle
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Pictures
+lrwxrwxrwx 1 sganugap 197121      69 Apr  9 16:05  PrintHood -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 sganugap 197121      58 Apr  9 16:05  Recent -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Recent
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17 'Saved Games'
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Searches
+lrwxrwxrwx 1 sganugap 197121      58 Apr  9 16:05  SendTo -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 sganugap 197121      62 Apr  9 16:05 'Start Menu' -> '/c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 sganugap 197121      61 Apr  9 16:05  Templates -> /c/Users/sganugap/AppData/Roaming/Microsoft/Windows/Templates
+drwxr-xr-x 1 sganugap 197121       0 May 22 10:17  Videos
+drwxr-xr-x 1 sganugap 197121       0 May 23 12:06  gitTutorial
+-rw-r--r-- 1 sganugap 197121  668672 Apr  9 16:05  ntuser.dat.LOG1
+-rw-r--r-- 1 sganugap 197121  794624 Apr  9 16:05  ntuser.dat.LOG2
+-rw-r--r-- 1 sganugap 197121      20 Apr  9 16:05  ntuser.ini
+-r--r--r-- 1 sganugap 197121     768 Apr  9 16:05  ntuser.pol
+
+C:\Users\sganugap>cd gitTutorial
+
+C:\Users\sganugap\gitTutorial>git init
+Initialized empty Git repository in C:/Users/sganugap/gitTutorial/.git/
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sganugap\gitTutorial>git add 'file1.txt'
+fatal: pathspec ''file1.txt'' did not match any files
+
+C:\Users\sganugap\gitTutorial>git add file1.txt
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   file1.txt
+
+
+C:\Users\sganugap\gitTutorial>git commit -m "Added file1.txt"
+[master (root-commit) 0045c1b] Added file1.txt
+ Committer: sganugap <sganugap@SGANUGAP-US.us.oracle.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+C:\Users\sganugap\gitTutorial>git log
+commit 0045c1b720494b49dda4482814ace63bd24bf50e (HEAD -> master)
+Author: sganugap <sganugap@SGANUGAP-US.us.oracle.com>
+Date:   Wed May 23 12:12:42 2018 -0400
+
+    Added file1.txt
+
+C:\Users\sganugap\gitTutorial>git remote add origin https://github.com/gsravya/gitTutorial.git
+
+C:\Users\sganugap\gitTutorial>git push -u origin master
+^C
+C:\Users\sganugap\gitTutorial>git push -u origin master
+fatal: unable to access 'https://github.com/gsravya/gitTutorial.git/': Failed to connect to github.com port 443: Timed out
+
+C:\Users\sganugap\gitTutorial>git push -u origin master
+^C
+C:\Users\sganugap\gitTutorial>git push -u origin master
+To https://github.com/gsravya/gitTutorial.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gsravya/gitTutorial.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\sganugap\gitTutorial>git push -u origin master
+To https://github.com/gsravya/gitTutorial.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gsravya/gitTutorial.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\sganugap\gitTutorial>git pull origin master
+warning: no common commits
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/gsravya/gitTutorial
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+C:\Users\sganugap\gitTutorial>git push -u origin master
+To https://github.com/gsravya/gitTutorial.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/gsravya/gitTutorial.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\sganugap\gitTutorial>git push -f origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 236 bytes | 78.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gsravya/gitTutorial.git
+ + 80bd5db...0045c1b master -> master (forced update)
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sganugap\gitTutorial>git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/gsravya/gitTutorial
+ * branch            master     -> FETCH_HEAD
+   0045c1b..85a1c4d  master     -> origin/master
+Updating 0045c1b..85a1c4d
+Fast-forward
+ file2onremote | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2onremote
+
+C:\Users\sganugap\gitTutorial>git diff HEAD
+
+C:\Users\sganugap\gitTutorial>git pull origin master
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/gsravya/gitTutorial
+ * branch            master     -> FETCH_HEAD
+   85a1c4d..ef73e0c  master     -> origin/master
+Updating 85a1c4d..ef73e0c
+Fast-forward
+ file2onremote => file2onremote.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file2onremote => file2onremote.txt (100%)
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sganugap\gitTutorial>git add file3.txt
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   file3.txt
+
+
+C:\Users\sganugap\gitTutorial>git commit -m "Added file3.txt"
+[master a675244] Added file3.txt
+ Committer: sganugap <sganugap@SGANUGAP-US.us.oracle.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3.txt
+
+C:\Users\sganugap\gitTutorial>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sganugap\gitTutorial>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\sganugap\gitTutorial>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 320 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gsravya/gitTutorial.git
+   ef73e0c..a675244  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\sganugap\gitTutorial>git branch
+* master
+
+C:\Users\sganugap\gitTutorial>git branch branch1
+
+C:\Users\sganugap\gitTutorial>git branch
+  branch1
+* master
+
+C:\Users\sganugap\gitTutorial>git checkout branch1
+Switched to branch 'branch1'
+
+C:\Users\sganugap\gitTutorial>git rm file3.txt
+rm 'file3.txt'
+
+C:\Users\sganugap\gitTutorial>git rm file3.txt
+fatal: pathspec 'file3.txt' did not match any files
+
+C:\Users\sganugap\gitTutorial>git status
+On branch branch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    file3.txt
+
+
+C:\Users\sganugap\gitTutorial>git commit -m "Deleted file3.txt on branch1 branch"
+[branch1 2603cd7] Deleted file3.txt on branch1 branch
+ Committer: sganugap <sganugap@SGANUGAP-US.us.oracle.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file3.txt
+
+C:\Users\sganugap\gitTutorial>git status
+On branch branch1
+nothing to commit, working tree clean
+
+C:\Users\sganugap\gitTutorial>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\sganugap\gitTutorial>git merge branch1
+Updating a675244..2603cd7
+Fast-forward
+ file3.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file3.txt
+
+C:\Users\sganugap\gitTutorial>git branch -d branch1
+Deleted branch branch1 (was 2603cd7).
+
+C:\Users\sganugap\gitTutorial>git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 248 bytes | 124.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gsravya/gitTutorial.git
+   a675244..2603cd7  master -> master
+
+C:\Users\sganugap\gitTutorial>git add CommandLog.txt
+
+C:\Users\sganugap\gitTutorial>git commit -m "Added CommandLog.txt"
+
+C:\Users\sganugap\gitTutorial>git push
